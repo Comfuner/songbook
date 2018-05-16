@@ -1,0 +1,28 @@
+@import "reset";
+.mainStage {
+  height: 100vh;
+  width:100%;
+  overflow:hidden;
+  &-wrapper {
+    display:inline-flex;
+    height: 100vh;
+    transform: translateX(0);
+    transition: 0.25s all ease-in-out;
+    &.side {
+      transform: translateX(-20vw);
+    }
+  }
+}
+
+nav {
+  width:20vw;
+  background:green;
+}
+.theBook {
+  width:80vw;
+  background:yellow;
+}
+aside {
+  width:20vw;
+  background:blue;
+}
