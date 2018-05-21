@@ -1,7 +1,23 @@
+@media (max-width: 767px){
+}
+@media (min-width: 768px) and (max-width: 992px) {
+}
+@media (min-width: 993px) and (max-width: 1350px){
+}
+@media (min-width: 1351px) {
+}
+
 @import "reset";
+body, html {
+  font-family: 'Assistant', sans-serif;
+  font-size:18px;
+}
+*, *:after,*:before {
+  box-sizing: border-box;
+}
 .mainStage {
   height: 100vh;
-  width:100%;
+  width:100vw;
   overflow:hidden;
   &-wrapper {
     display:inline-flex;
@@ -13,16 +29,65 @@
     }
   }
 }
-
 nav {
-  width:20vw;
-  background:green;
+  width:33.333vw;
+  background:black;
 }
 .theBook {
-  width:80vw;
-  background:yellow;
+  width:67.77vw;
+  background: rgba(255, 222, 173, 0.65);
+  padding:0 24px;
+  height:100vh;
+  overflow: auto;
+  .roller {
+    overflow:hidden;
+    background:#fff;
+    display: flex;
+    flex-direction: column;
+    & > article {
+      position:relative;
+    }
+  }
 }
 aside {
-  width:20vw;
-  background:blue;
+  width:33.33vw;
+  background:darkgray;
+}
+.songBookCover {
+  height:100vh;
+  &-wrapper {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    h1 {
+      font-size:4vw;
+      font-weight:700;
+    }
+  }
+}
+
+.song {
+  padding:200px;
+  direction:rtl;
+  font-size:24px;
+  @media (max-width: 767px){
+    padding:12px;
+  }
+  @media (min-width: 768px) and (max-width: 992px) {
+  }
+  @media (min-width: 993px) and (max-width: 1350px){
+  }
+  @media (min-width: 1351px) {
+  }
+
+
+}
+#song {
+  &-a {
+    letter-spacing: -0.75px;
+    font-weight:300;
+    font-size:4.25vw;
+    line-height:5.5vw;
+  }
 }
